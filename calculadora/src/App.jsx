@@ -29,6 +29,37 @@ function App() {
         setshowPlus(false);
         setshowCalculator(false);
     } ;
+
+    const renderButtons = () => {
+    const buttons = [];
+    for (let i = 0; i < 10; i++) {
+        buttons.push(
+            <button key={i} onClick={() => alert(i)}>
+                {i}
+            </button>
+        );
+    }
+    return buttons;
+    };
+
+    const calResult = () =>  {
+
+    } ; 
+    const addtion = () =>  {
+
+    } ; 
+    const subtraction = () =>  {
+
+    } ; 
+    const multi = () =>  {
+
+    } ; 
+    const division = () =>  {
+
+    } ; 
+    const backnumber = () =>  {
+
+    } ; 
     return(
 
         <>
@@ -69,7 +100,13 @@ function App() {
             <br></br>
             <input type='number' value={num2} onChange={(e => setNum2(e.target.value))}></input>   
             <br></br>
-            <button onClick={manejarSuma}>Sumar</button>
+            <button onClick={calResult}>=</button>
+            <button onClick={addtion}>+</button>
+            <button onClick={subtraction}>-</button>
+            <button onClick={multi}>*</button>
+            <button onClick={division}>/</button>
+            <button onClick={backnumber}>back</button>
+            <>{renderButtons()}</>
             </>
             )
          }
