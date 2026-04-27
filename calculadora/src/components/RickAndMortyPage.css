@@ -1,0 +1,41 @@
+@reference "tailwindcss";
+
+.rm-card {
+    @apply border border-gray-200 rounded-lg overflow-hidden shadow-sm flex flex-col;
+}
+
+.rm-card-body {
+    @apply p-3 flex flex-col flex-1;
+}
+
+.rm-card-name {
+    @apply font-semibold text-sm;
+}
+
+.rm-card-species {
+    @apply text-xs text-gray-500;
+}
+
+.rm-card-btn {
+    @apply mt-auto w-full bg-blue-600 text-white text-xs rounded py-1.5 hover:bg-blue-700;
+}
+
+.rm-search-input {
+    @apply flex-1 border border-gray-300 rounded p-2;
+}
+
+.rm-pagination-btn {
+    @apply px-4 py-2 border rounded disabled:opacity-40 hover:bg-gray-100;
+}
+
+.rm-modal-overlay {
+    @apply fixed inset-0 bg-black/60 flex items-center justify-center z-50 p-4;
+}
+
+.rm-modal-box {
+    @apply bg-white rounded-xl max-w-lg w-full overflow-hidden shadow-xl;
+}
+
+.rm-modal-close-btn {
+    @apply w-full bg-gray-100 hover:bg-gray-200 rounded-lg py-2 text-sm font-medium;
+}
