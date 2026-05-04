@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-function Plus() {
+function PlusPage() {
     const [num1, setNum1] = useState('');
     const [num2, setNum2] = useState('');
 
@@ -42,4 +42,4 @@ function Plus() {
     );
 }
 
-export default Plus;
+export default PlusPage;
